@@ -1,0 +1,49 @@
+.page {
+  max-width: 900px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cardIcon {
+  font-size: 36px;
+  display: flex;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardLabel {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.cardValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
