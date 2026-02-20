@@ -1,0 +1,42 @@
+.page {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--gnb-height) - 64px);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.scrollContainer {
+  flex: 1;
+  overflow-y: auto;
+  border-radius: var(--radius-md);
+}
+
+.virtualContainer {
+  width: 100%;
+  position: relative;
+}
+
+.virtualRow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  color: var(--color-text-tertiary);
+  font-size: 14px;
+}
